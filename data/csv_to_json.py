@@ -22,7 +22,6 @@ def convert_file(csv_file, json_file, model):
 
             result.append({"model": model, "fields": row})
 
-
     with open(json_file, "w", encoding='utf-8') as f:
         f.write(json.dumps(result, ensure_ascii=False))
 
